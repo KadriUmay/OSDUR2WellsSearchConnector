@@ -161,21 +161,11 @@ Create and enable a search vertical at the organization level following the
 instructions in [Customize the Microsoft Search
 page](https://docs.microsoft.com/MicrosoftSearch/customize-search-page).
 
-![](media/c5bc678aea34376525889a2a12d93526.png)
-
--   **Name:** OSDU R2 Well Connector
+-   **Name:** Appliance Parts
 
 -   **Content source:** the connector created with the app
 
 -   **Add a query:** leave blank
-
-![](media/e40a0b06cc92a383ffca0000ec7aec32.png)
-
-![](media/9b637b4927186068823e7501bb58d1a2.png)
-
-![](media/9a2f9712b32124ec327f9ea299d82fe1.png)
-
-![](media/2be6ecba08915f16ffcdf4fe7babd5f2.png)
 
 ## Create a result type
 
@@ -183,15 +173,13 @@ Create a result type at the organization level following the instructions in
 [Customize the Microsoft Search
 page](https://docs.microsoft.com/MicrosoftSearch/customize-search-page).
 
--   **Name:** OSDU R2 Well Data
+-   **Name:** Appliance Part
 
 -   **Content source:** the connector created with the app
 
 -   **Rules:** None
 
 -   Paste contents of [result-type.json](result-type.json) into layout
-
-![](media/7a223d74a11c1c8a133e5224abf192a8.png)
 
 ## Search for results
 
@@ -201,28 +189,17 @@ In this step you'll search for parts in SharePoint.
 
 2.  Using the search box at the top of the page, search for `hinge`.
 
-3.  When the search completes with 0 results, select the **OSDU R2 Well Data**
+3.  When the search completes with 0 results, select the **Appliance Parts**
     tab.
 
 4.  Results from the connector are displayed.
 
-![](media/88af2f16bca334f717526ca7dc381108.png)
+## Updating records in the database
 
-## Search for results in Bing Enterprise
+Use your favorite tool to update records in the database. The **Push updated
+items** menu choice will only push the items you update.
 
-Select the Configurations tab in Search Configuration for you O365 tenant
+>   **NOTE:** Do not delete records from the database. To "delete" an item, set
+>   the IsDeleted property to 1.
 
-![](media/46b5aff761d7db10144b1b03d405ad9b.png)
-
-Enable Bing Search Enterprise
-
-![](media/55aff54a8c08c084016ee73cb3af1ac2.png)
-
->   Open Bing Search, login with your corporate credentials or your demo tenant
->   credentials, search for the BIR\* wells
-
-![](media/6fc4ec95c09c06593c429fe458a66b3c.png)
-
->   Select work tab and select the OSDU R2 Well Data section from left
-
-![](media/d6e462b540db1b3d95a2b4e7362dc49e.png)
+>   DB Browser
