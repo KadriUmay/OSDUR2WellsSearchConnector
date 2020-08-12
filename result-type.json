@@ -1,0 +1,64 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+      {
+          "type": "ColumnSet",
+          "columns": [
+              {
+                  "type": "Column",
+                  "width": "auto",
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://dev.virtualearth.net/REST/V1/Imagery/Map/Aerial/{Lat}%2C{Lon}/13?mapSize=150,150&format=png&pushpin={Lat},{Lon};;{UWI}&key=AlwIAc53BjDDXdEKY8dID1Sm78eJTW4TPGzGrcDfQOkRRhuyHKS9Va7NdMb5_xfB",
+                          "horizontalAlignment": "Center",
+                          "size": "Large"
+                      }
+                  ],
+                  "horizontalAlignment": "Center"
+              },
+              {
+                  "type": "Column",
+                  "width": "auto",
+                  "items": [
+                      {
+                          "type": "TextBlock",
+                          "text": "Well #{UWI}          \n{WellName}",
+                          "color": "Good",
+                          "size": "Large",
+                          "spacing": "Small",
+                          "height": "stretch",
+                          "fontType": "Monospace",
+                          "weight": "Bolder",
+                          "id": "CommonName",
+                          "maxLines": 2
+                      }
+                  ],
+                  "spacing": "Medium"
+              },
+              {
+                  "type": "Column",
+                  "width": "auto",
+                  "items": [
+                      {
+                          "type": "FactSet",
+                          "facts": [
+                              {
+                                  "title": "Location",
+                                  "value": "{StateProvinceID}, {CountryID}"
+                              },
+                              {
+                                  "title": "Spud Date",
+                                  "value": "{SpudDate}"
+                              }
+                          ]
+                      }
+                  ],
+                  "spacing": "Medium"
+              }
+          ]
+      }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

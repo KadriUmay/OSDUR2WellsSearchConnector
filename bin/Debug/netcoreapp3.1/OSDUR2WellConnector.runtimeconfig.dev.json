@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\kadriu\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\kadriu\\.nuget\\packages"
+    ]
+  }
+}
